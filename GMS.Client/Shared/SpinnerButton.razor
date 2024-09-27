@@ -1,0 +1,19 @@
+﻿
+<button class="btn btn-primary @(IsSpinning ? "disabled" : "")" @attributes="@Attributes">
+    @if (IsSpinning)
+    {
+        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+    }
+    @Text
+</button>
+
+@code {
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public bool IsSpinning { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> Attributes { get; set; }
+}

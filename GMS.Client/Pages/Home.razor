@@ -1,0 +1,22 @@
+﻿@using GMS.Client.Services.Account
+@using GMS.Client.Services.Users
+
+@page "/"
+@attribute [Authorize]
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, @UserName!</h1>
+
+Welcome to your garage management system.
+
+@code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    private string UserName;
+    protected override async void OnInitialized()
+    {
+        UserName = (await AuthenticationState).User.Identity.Name;
+    }
+}

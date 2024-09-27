@@ -1,0 +1,11 @@
+﻿global using GMS.Shared.Constants;
+global using GMS.Shared.Enums;
+global using GMS.API.Entities;
+global using GMS.Shared.Attributes;
+global using GMS.API.Factories;
+global using GMS.API.Data.Repositories.UnitOfWork;
+global using GMS.API.Settings;
+global using GMS.API.Extensions;
+global using GMS.API.Helpers;
+global using AutoMapper;
+global using Microsoft.AspNetCore.Mvc;

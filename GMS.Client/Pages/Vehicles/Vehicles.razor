@@ -1,0 +1,122 @@
+﻿@page "/vehicles"
+@attribute [HaveRoles(Roles.Admin, Roles.Employee)]
+
+<div class="bg-white shadow-sm p-4 rounded rounded-3 mt-4">
+    <h3 class="fs-3">Filter</h3>
+
+    <EditForm Model="FilterVehicleDto" OnValidSubmit="FilterAsync">
+        <DataAnnotationsValidator />
+        <div class="mb-3">
+            <label class="mb-1">Owner</label>
+            <InputSelect @bind-Value="FilterVehicleDto.OwnerId" class="form-control" placeholder="Owner">
+                <option selected hidden>Owner</option>
+                @foreach (var owner in OwnersList)
+                {
+                    <option value="@owner.Id">@owner.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => FilterVehicleDto.OwnerId" />
+        </div>
+        <div class="mb-3">
+            <label class="mb-1">Brands</label>
+            <InputSelect @bind-Value="FilterVehicleDto.BrandId" class="form-control" placeholder="Brand">
+                <option selected hidden>Brand</option>
+                @foreach (var brand in BrandsList)
+                {
+                    <option value="@brand.Id">@brand.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => FilterVehicleDto.BrandId" />
+        </div>
+        <div class="mb-3">
+            <lable class="mb-1">License Plate</lable>
+            <InputText @bind-Value="FilterVehicleDto.LicensePlate" class="form-control" placeholder="LicensePlate" />
+            <ValidationMessage For="() => FilterVehicleDto.LicensePlate" />
+        </div>
+        <div class="mb-3">
+            <label class="mb-1">Status</label>
+            <InputSelect @bind-Value="FilterVehicleDto.Status" class="form-control" placeholder="Phone">
+                <option selected hidden disabled>Status</option>
+                @foreach (var status in Enum.GetNames<VehicleStatus>())
+                {
+                    <option value="@status">@status</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => FilterVehicleDto.Status" />
+        </div>
+        <div class="d-flex justify-content-end gap-2">
+            <a class="btn btn-secondary" @onclick="ResetAsync">Reset</a>
+            <SpinnerButton Text="Filter" IsSpinning="@IsFiltering" />
+        </div>
+    </EditForm>
+</div>
+
+<div class="bg-white shadow-sm p-4 rounded rounded-3 mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h3 class="fs-3">Vehicles</h3>
+        <AuthorizeView Roles="@Roles.Admin.ToString()">
+            <Authorized>
+                <a href="/vehicles/create" class="btn btn-primary">Create</a>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+
+    <div class="overflow-auto">
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">License Plate</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (VehiclesList != null)
+                {
+                    @foreach (var vehicle in VehiclesList)
+                    {
+                        <tr class="text-nowrap align-middle">
+                            <td>@vehicle.Owner.Name</td>
+                            <td>@vehicle.Brand.Name</td>
+                            <td>@vehicle.LicensePlate</td>
+                            <td>@vehicle.Description</td>
+                            <td>
+                                @if (vehicle.Status == VehicleStatus.In.ToString()) {
+                                    <span class="badge bg-success">
+                                        @vehicle.Status
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">
+                                        @vehicle.Status
+                                    </span>
+                                }
+                            </td>
+
+                            <td>
+                                <button class="btn btn-secondary" @onclick="@(()=> ToggleStatusAsync(vehicle))">Toggle Status</button>
+                                <AuthorizeView Roles="@Roles.Admin.ToString()">
+                                    <Authorized>
+                                          <a href="/vehicles/update/@vehicle.Id" class="btn btn-primary">Update</a>
+                                          <button class="btn btn-danger" @onclick="@(() => DeleteAsync(vehicle.Id))">Delete</button>
+                                    </Authorized>
+                                </AuthorizeView>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (IsFetching)
+    {
+        <div class="mt-4">
+            <Loader />
+        </div>
+    }
+
+</div>

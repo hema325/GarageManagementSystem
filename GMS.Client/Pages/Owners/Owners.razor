@@ -1,0 +1,59 @@
+﻿@page "/owners"
+@attribute [HaveRoles(Roles.Admin, Roles.Employee)]
+
+
+<div class="bg-white shadow-sm p-4 rounded rounded-3 mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h3 class="fs-3">Owners</h3>
+        <AuthorizeView Roles="@Roles.Admin.ToString()">
+            <Authorized>
+                <a href="/owners/create" class="btn btn-primary">Create</a>
+            </Authorized>
+        </AuthorizeView>
+    </div>
+
+    <div class="overflow-auto">
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <AuthorizeView Roles="@Roles.Admin.ToString()">
+                        <Authorized>
+                            <th scope="col">Actions</th>
+                        </Authorized>
+                    </AuthorizeView>
+                </tr>
+            </thead>
+            <tbody>
+                @if (OwnersList != null)
+                {
+                    @foreach (var owner in OwnersList)
+                    {
+                        <tr class="text-nowrap">
+                            <td>@owner.Name</td>
+                            <td>@owner.Email</td>
+                            <td>@owner.Phone</td>
+                            <AuthorizeView Roles="@Roles.Admin.ToString()">
+                                <Authorized>
+                                    <td>
+                                        <a href="/owners/update/@owner.Id" class="btn btn-primary">Update</a>
+                                        <button class="btn btn-danger" @onclick="@(() => DeleteAsync(@owner.Id))">Delete</button>
+                                    </td>
+                                </Authorized>
+                            </AuthorizeView>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (IsFetching)
+    {
+        <div class="mt-4">
+            <Loader />
+        </div>
+    }
+
+</div>

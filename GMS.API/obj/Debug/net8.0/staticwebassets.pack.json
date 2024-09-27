@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.API\\wwwroot\\5a919ffe-1525-438f-bf92-c425af7a592c.png",
+      "PackagePath": "staticwebassets\\5a919ffe-1525-438f-bf92-c425af7a592c.png"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.API\\wwwroot\\7528cf81-93d0-41a9-808f-37c65f5c2227.png",
+      "PackagePath": "staticwebassets\\7528cf81-93d0-41a9-808f-37c65f5c2227.png"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.API\\wwwroot\\b3735731-1bea-48ef-9fef-01969d10d617.png",
+      "PackagePath": "staticwebassets\\b3735731-1bea-48ef-9fef-01969d10d617.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GMS.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GMS.API.props",
+      "PackagePath": "build\\GMS.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GMS.API.props",
+      "PackagePath": "buildMultiTargeting\\GMS.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GMS.API.props",
+      "PackagePath": "buildTransitive\\GMS.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

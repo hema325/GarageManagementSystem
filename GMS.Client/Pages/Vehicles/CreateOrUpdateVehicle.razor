@@ -1,0 +1,59 @@
+﻿@page "/vehicles/create"
+@page "/vehicles/update/{id:int}"
+@attribute [HaveRoles(Roles.Admin)]
+
+<div class="bg-white shadow-sm p-4 rounded rounded-3 mt-4">
+    <h3 class="fs-3">@(IsUpdate() ? "Update" : "Create")</h3>
+
+    <EditForm Model="CreateOrUpdateVehicleDto" OnValidSubmit="OnValidSubmit">
+        <DataAnnotationsValidator />
+        <div class="mb-3">
+            <label class="mb-1">Owner</label>
+            <InputSelect @bind-Value="CreateOrUpdateVehicleDto.OwnerId" class="form-control" placeholder="Owner">
+                <option selected hidden>Owner</option>
+                @foreach (var owner in OwnersList)
+                {
+                    <option value="@owner.Id">@owner.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => CreateOrUpdateVehicleDto.OwnerId" />
+        </div>
+        <div class="mb-3">
+            <label class="mb-1">Brands</label>
+            <InputSelect @bind-Value="CreateOrUpdateVehicleDto.BrandId" class="form-control" placeholder="Brand">
+                <option selected hidden>Brand</option>
+                @foreach (var brand in BrandsList)
+                {
+                    <option value="@brand.Id">@brand.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => CreateOrUpdateVehicleDto.BrandId" />
+        </div>
+        <div class="mb-3">
+            <lable class="mb-1">License Plate</lable>
+            <InputText @bind-Value="CreateOrUpdateVehicleDto.LicensePlate" class="form-control" placeholder="LicensePlate" />
+            <ValidationMessage For="() => CreateOrUpdateVehicleDto.LicensePlate" />
+        </div>
+        <div class="mb-3">
+            <lable class="mb-1">Description</lable>
+            <InputText @bind-Value="CreateOrUpdateVehicleDto.Description" class="form-control" placeholder="Description" />
+            <ValidationMessage For="() => CreateOrUpdateVehicleDto.Description" />
+        </div>
+        <div class="mb-3">
+            <label class="mb-1">Status</label>
+            <InputSelect @bind-Value="CreateOrUpdateVehicleDto.Status" class="form-control" placeholder="Phone" >
+                <option selected hidden disabled>Status</option>
+                @foreach(var status in Enum.GetNames<VehicleStatus>())
+                {
+                    <option value="@status">@status</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="() => CreateOrUpdateVehicleDto.Status" />
+        </div>
+        <div class="d-flex justify-content-end gap-2">
+            <a href="/vehicles" class="btn btn-secondary">Back</a>
+            <SpinnerButton Text="@(IsUpdate() ? "Update":"Create")" IsSpinning="@IsCreatingOrUpdating" />
+        </div>
+    </EditForm>
+
+</div>

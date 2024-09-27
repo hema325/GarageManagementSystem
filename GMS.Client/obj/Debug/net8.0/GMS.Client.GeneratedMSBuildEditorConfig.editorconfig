@@ -1,0 +1,119 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = GMS.Client
+build_property.RootNamespace = GMS.Client
+build_property.ProjectDir = D:\Projects\Garage Management System\GMS.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\Garage Management System\GMS.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/Garage Management System/GMS.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Layout/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEVtcHR5TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Account/Account.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2NvdW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Account/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Account/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWRpcmVjdFRvTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Brands/Brands.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRzXEJyYW5kcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Brands/CreateOrUpdateBrand.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnJhbmRzXENyZWF0ZU9yVXBkYXRlQnJhbmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Errors/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXEFjY2Vzc0RlbmllZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Errors/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXE5vdEZvdW5kLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Errors/RedirectToNotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXFJlZGlyZWN0VG9Ob3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Errors/ServerError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JzXFNlcnZlckVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Owners/CreateOrUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3duZXJzXENyZWF0ZU9yVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Owners/Owners.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3duZXJzXE93bmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Users/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Users/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Users/Users.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Vehicles/CreateOrUpdateVehicle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcQ3JlYXRlT3JVcGRhdGVWZWhpY2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Pages/Vehicles/Vehicles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcVmVoaWNsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Shared/Loader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Shared/SpinnerButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNwaW5uZXJCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Garage Management System/GMS.Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oxpzy5lcy9
+
+[D:/Projects/Garage Management System/GMS.Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ior28k1x0m

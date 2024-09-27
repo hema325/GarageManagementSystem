@@ -1,0 +1,23 @@
+﻿@page "/login"
+@layout EmptyLayout
+
+<div class="container vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <div class="p-4 shadow-sm rounded rounded-3 w-100 bg-white" style="max-width: 700px">
+        <EditForm Model="LoginRequest" OnValidSubmit="OnValidSubmit">
+            <DataAnnotationsValidator />
+            <div class="mb-3">
+                <label for="email" class="mb-1">Email</label>
+                <InputText @bind-Value="LoginRequest.Email" class="form-control" id="email" placeholder="Email" />
+                <ValidationMessage For="() => LoginRequest.Email" />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="mb-1">Password</label>
+                <InputText @bind-Value="LoginRequest.Password" class="form-control" type="password" id="password" placeholder="Password" />
+                <ValidationMessage For="()=> LoginRequest.Password" />
+            </div>
+            <div class="float-end clearfix">
+                <SpinnerButton Text="Login" IsSpinning="@IsLogging"/>
+            </div>
+        </EditForm>
+    </div>
+</div>

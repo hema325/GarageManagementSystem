@@ -1,0 +1,25 @@
+﻿@using GMS.Client.Pages.Account
+
+@if (!IsRelogin)
+{
+    <CascadingAuthenticationState>
+        <Router AppAssembly="@typeof(App).Assembly">
+            <Found Context="routeData">
+                <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" >
+                    <NotAuthorized><RedirectToLogin /></NotAuthorized>
+                </AuthorizeRouteView>
+                <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+            </Found>
+            <NotFound>
+                <PageTitle>Not found</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)"><RedirectToNotFound /></LayoutView>
+            </NotFound>
+        </Router>
+    </CascadingAuthenticationState>
+}
+else
+{
+    <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+        <Loader />
+    </div>
+}

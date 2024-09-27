@@ -1,0 +1,19 @@
+﻿@using System.Web
+@code {
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!(await AuthenticationState).User.Identity!.IsAuthenticated)
+        {
+            var returnUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+            NavigationManager.NavigateTo($"/login?returnUrl={HttpUtility.UrlEncode(returnUrl)}");
+        }
+        else
+            NavigationManager.NavigateTo("/access-denied");
+    }
+}

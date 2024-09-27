@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\obj\\Debug\\net8.0\\compressed\\akfh4hp5qm.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\GMS.Client.styles.css",
+      "PackagePath": "staticwebassets\\GMS.Client.styles.css"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\Projects\\Garage Management System\\GMS.Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GMS.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GMS.Client.props",
+      "PackagePath": "build\\GMS.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GMS.Client.props",
+      "PackagePath": "buildMultiTargeting\\GMS.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GMS.Client.props",
+      "PackagePath": "buildTransitive\\GMS.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,12 @@
+D:\Projects\Garage Management System\GMS.Shared\bin\Debug\net8.0\GMS.Shared.deps.json
+D:\Projects\Garage Management System\GMS.Shared\bin\Debug\net8.0\GMS.Shared.dll
+D:\Projects\Garage Management System\GMS.Shared\bin\Debug\net8.0\GMS.Shared.pdb
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.AssemblyInfoInputs.cache
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.AssemblyInfo.cs
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.csproj.CoreCompileInputs.cache
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.dll
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\refint\GMS.Shared.dll
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.pdb
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\ref\GMS.Shared.dll
+D:\Projects\Garage Management System\GMS.Shared\obj\Debug\net8.0\GMS.Shared.csproj.AssemblyReference.cache
